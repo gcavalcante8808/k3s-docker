@@ -18,6 +18,7 @@ After a minute, test the k3s using the command `docker-compose exec node1 k3s ku
 You can do it in two ways:
 
  a. Use the alias 'k3sctl' by sourcing the file aliases.sh using the command: `source aliases.sh` from the projects folder;
+
  b. Find the container name or id using the command `docker ps`; Then, Copy the kubeconfig file from the container to your machine using `docker cp <NAMEorIDofContainer>:/etc/rancher/k3s/k3s.yaml ~/.kube/config`. (Beware that this action will override your current kubectl config).
 
 Author
