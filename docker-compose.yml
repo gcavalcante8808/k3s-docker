@@ -6,7 +6,7 @@ volumes:
 
 services:
   node1:
-    image: k3s:docker
+    image: gcavalcante8808/k3s-docker
     privileged: true
     hostname: node1
     build: .
