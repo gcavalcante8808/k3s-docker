@@ -1,0 +1,19 @@
+version: '2'
+
+volumes:
+  rancher-internal-data:
+  k3s-root-cache:
+
+services:
+  node1:
+    image: k3s:docker
+    privileged: true
+    hostname: node1
+    build: .
+    volumes:
+     - /var/run/docker.sock:/var/run/docker.sock
+     - rancher-internal-data:/var/lib/rancher/
+     - k3s-root-cache:/root/.kube
+    ports:
+    - 6443:6443
+
