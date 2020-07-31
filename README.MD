@@ -1,5 +1,6 @@
 [![](https://images.microbadger.com/badges/image/gcavalcante8808/k3s-docker.svg)](https://microbadger.com/images/gcavalcante8808/k3s-docker "Get your own image badge on microbadger.com")
 [![](https://images.microbadger.com/badges/version/gcavalcante8808/k3s-docker.svg)](https://microbadger.com/images/gcavalcante8808/k3s-docker "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/commit/gcavalcante8808/k3s-docker.svg)](https://microbadger.com/images/gcavalcante8808/k3s-docker "Get your own commit badge on microbadger.com")
 
 K3S
 ---
