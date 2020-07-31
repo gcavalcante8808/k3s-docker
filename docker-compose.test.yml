@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  sut:
+    build: 
+      context: .
+      args:
+        K3S_VERSION: ${K3S_VERSION:-v1.18.6+k3s1}
+    command: k3s --version
