@@ -6,6 +6,14 @@ RUN curl -L --output k3s https://github.com/rancher/k3s/releases/download/${K3S_
     chmod +x k3s
 
 FROM debian:10
+LABEL 
+      org.label-schema.name="K3S Docker" \
+      org.label-schema.description="This is an image with k3s (https://github.com/rancher/k3s) packaged into a docker container." \
+      org.label-schema.vcs-ref="master" \
+      org.label-schema.vcs-url="https://github.com/gcavalcante8808/k3s-docker" \
+      org.label-schema.vendor="Side Cloud Inc" \
+      org.label-schema.version="v1.18.6+k3s1" \
+      org.label-schema.schema-version="1.0"
 WORKDIR /usr/local/bin
 
 COPY --from=downloader /usr/src/k3s .
