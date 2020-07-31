@@ -6,8 +6,7 @@ RUN curl -L --output k3s https://github.com/rancher/k3s/releases/download/${K3S_
     chmod +x k3s
 
 FROM debian:10
-LABEL 
-      org.label-schema.name="K3S Docker" \
+LABEL org.label-schema.name="K3S Docker" \
       org.label-schema.description="This is an image with k3s (https://github.com/rancher/k3s) packaged into a docker container." \
       org.label-schema.vcs-ref="master" \
       org.label-schema.vcs-url="https://github.com/gcavalcante8808/k3s-docker" \
